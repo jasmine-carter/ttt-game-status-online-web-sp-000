@@ -58,17 +58,17 @@ def over?(board)
 end
 
 def winner(board)
-win_combination = won?(board)
-  win_index_1 = win_combination[0]
-  win_index_2 = win_combination[1]
-  win_index_3 = win_combination[2]
-
-  position_1 = board[win_index_1]
-  position_2 = board[win_index_2]
-  position_3 = board[win_index_3]
-  if !won?(board) && !full?(board) || draw?(board) 
+  if !won?(board) && !full?(board) || draw?(board)
     puts nil
   else won?(board)
+    win_combination = won?(board)
+      win_index_1 = win_combination[0]
+      win_index_2 = win_combination[1]
+      win_index_3 = win_combination[2]
+
+      position_1 = board[win_index_1]
+      position_2 = board[win_index_2]
+      position_3 = board[win_index_3]
   position_1
 end
 end
