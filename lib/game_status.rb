@@ -68,5 +68,7 @@ win_combination = won?(board)
   position_3 = board[win_index_3]
   if won?(board)
   position_1
+else
+  nil
 end
 end
