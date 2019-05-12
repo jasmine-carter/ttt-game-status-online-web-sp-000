@@ -68,7 +68,7 @@ win_combination = won?(board)
   position_3 = board[win_index_3]
   if draw?(board)
     puts nil
-  elsif  won?(board)
+  else won?(board)
   position_1
 end
 end
