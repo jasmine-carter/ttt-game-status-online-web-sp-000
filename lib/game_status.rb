@@ -69,5 +69,4 @@ win_combination = won?(board)
   if won?(board)
   position_1
 end
-position_1
 end
