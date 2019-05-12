@@ -69,6 +69,6 @@ win_combination = won?(board)
   if won?(board)
   position_1
 elsif draw?(board)
-  nil
+  puts nil
 end
 end
