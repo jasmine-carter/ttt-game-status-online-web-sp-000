@@ -58,6 +58,7 @@ def over?(board)
 end
 
 def winner(board)
-  won?(board)
+  if won?(board)
   puts win_combination[0]
+end
 end
